@@ -6,4 +6,6 @@ module.exports = function (app) {
     })
     app.post('/auth/signup', authController.signup)
     app.post('/auth/signin', authController.signin)
+    app.post('/generateotp', authController.sendOtp)
+
 }
